@@ -7,25 +7,30 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
+            background-color: #f5f5f5;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 10px;
+            color: #333;
         }
 
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
+            color: #333;
         }
 
         p {
             margin-bottom: 20px;
+            color: #555;
         }
 
         ul {
             margin-bottom: 20px;
             padding-left: 20px;
+            color: #555;
         }
 
         li {
@@ -35,94 +40,151 @@
         footer {
             margin-top: 50px;
             text-align: center;
+            color: #777;
+        }
+
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section-content {
+            color: #555;
+        }
+
+        .achievement {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .certificate {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <h1>Santosh Metri</h1>
-    <img src="profilephoto.jpeg" alt="profile picture" />
-    <h2>Summary</h2>
-    <p>Knowledgeable software engineering professional with experience in building test frameworks, testing various applications, and hands-on experience in CI/CD pipelines. Organized and hardworking team player. Uses strong interpersonal skills to work well with internal and external stakeholders to meet project technical requirements. Always excited to learn and apply appropriate automation technologies to meet the short- and long-term goals of the testing organization. To further enhance technical knowledge as Senior SDET and contribute positively to Organizational development.</p>
+    <div class="section">
+        <h1>Santosh Metri</h1>
+        <img src="profilephoto.jpeg" alt="profile picture" class="profile-picture" />
+        <p class="section-content">Knowledgeable software engineering professional with experience in building test frameworks, testing various applications, and hands-on experience in CI/CD pipelines. Organized and hardworking team player. Uses strong interpersonal skills to work well with internal and external stakeholders to meet project technical requirements. Always excited to learn and apply appropriate automation technologies to meet the short- and long-term goals of the testing organization. To further enhance technical knowledge as Senior SDET and contribute positively to Organizational development.</p>
+    </div>
 
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor in Engineering (2011 - VTU Belgavi)</li>
-    </ul>
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <ul class="section-content">
+            <li>Bachelor in Engineering (2011 - VTU Belgavi)</li>
+        </ul>
+    </div>
 
-    <h2>Work Experience</h2>
-    <h3>SENIOR SDET • DERIVCO IPSWICH LTD • 2017- CURRENT</h3>
-    <ul>
-        <li>Have good knowledge of working on Playwright/Codeceptjs automation framework to implement E2E UI tests using TypeScript</li>
-        <li>Assist the development teams to test and release their products efficiently</li>
-        <li>Identification, creation, and maintenance of automated test scenarios</li>
-        <li>Improved test run times, pass rate, and defect detection, whilst minimizing manual intervention using Selenium Grid, Docker and Docker Swarm solution</li>
-        <li>Using design patterns and dependency injection reduced a lot of duplication in code which helped in stable regression test runs, easier to maintain and read</li>
-        <li>Not only followed the SOLID development principles but also enforced the same through the review process to maintain the quality of code</li>
-        <li>Set up many CI/CD environments and pipelines to build and deploy various solutions on merging the pull request</li>
-        <li>Automates the running of tests using Azure DevOps</li>
-        <li>Run E2E tests after every hour or monitoring tests every 5 mins with the help of job scheduling in Azure DevOps</li>
-        <li>Assist with product knowledge to those who require it</li>
-    </ul>
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-experience">
+            <h3>SENIOR SDET • DERIVCO IPSWICH LTD • 2017- CURRENT</h3>
+            <ul class="section-content">
+                <li>Have good knowledge of working on Playwright/Codeceptjs automation framework to implement E2E UI tests using TypeScript</li>
+                <li>Assist the development teams to test and release their products efficiently</li>
+                <li>Identification, creation, and maintenance of automated test scenarios</li>
+                <li>Improved test run times, pass rate, and defect detection, whilst minimizing manual intervention using Selenium Grid, Docker and Docker Swarm solution</li>
+                <li>Using design patterns and dependency injection reduced a lot of duplication in code which helped in stable regression test runs, easier to maintain and read</li>
+                <li>Not only followed the SOLID development principles but also enforced the same through the review process to maintain the quality of code</li>
+                <li>Set up many CI/CD environments and pipelines to build and deploy various solutions on merging the pull request</li>
+                <li>Automates the running of tests using Azure DevOps</li>
+                <li>Run E2E tests after every hour or monitoring tests every 5 mins with the help of job scheduling in Azure DevOps</li>
+                <li>Assist with product knowledge to those who require it</li>
+            </ul>
+        </div>
 
-    <h3>SENIOR SOFTWARE QUALITY AUTOMATION ENGINEER • EMIRATES AIRLINES DUBAI • 2015 - 2017</h3>
-    <ul>
-        <li>Preparing the overall automation testing strategy in an agile process and leading the other analysts to take charge of their functional areas</li>
-        <li>Identification, creation, and maintenance of automated test scenarios</li>
-        <li>Reporting the issues to the team using defect tracking tool</li>
-        <li>Resolving the technical blockers in the test automation team</li>
-        <li>Setting up CICD pipeline using Jenkins to run tests, build or deploy</li>
-        <li>Working closely with the customers to understand, test and deliver a requirement in the agile delivery process</li>
-        <li>Suggesting or implementing improvements to the test automation framework</li>
-    </ul>
+        <div class="work-experience">
+            <h3>SENIOR SOFTWARE QUALITY AUTOMATION ENGINEER • EMIRATES AIRLINES DUBAI • 2015 - 2017</h3>
+            <ul class="section-content">
+                <li>Preparing the overall automation testing strategy in an agile process and leading the other analysts to take charge of their functional areas</li>
+                <li>Identification, creation, and maintenance of automated test scenarios</li>
+                <li>Reporting the issues to the team using defect tracking tool</li>
+                <li>Resolving the technical blockers in the test automation team</li>
+                <li>Setting up CICD pipeline using Jenkins to run tests, build or deploy</li>
+                <li>Working closely with the customers to understand, test and deliver a requirement in the agile delivery process</li>
+                <li>Suggesting or implementing improvements to the test automation framework</li>
+            </ul>
+        </div>
 
-    <h3>SENIOR SOFTWARE ENGINEER• MINDTREE LTD BANGALORE• 2011 - 2015</h3>
-    <ul>
-        <li>Prepared test suites for End-to-End testing of the application using SOAPUI</li>
-        <li>Raised quality bugs providing all necessary details and with suitable severity and priority</li>
-        <li>Prepared various documents which helped others in testing the various modules</li>
-        <li>Escalated requirement gaps at the right time</li>
-        <li>Worked on groovy scripting as part of E2E automation scripts using SOAPUI</li>
-        <li>Worked on VB Scripting and QTP tool to automate desktop applications</li>
-    </ul>
+        <div class="work-experience">
+            <h3>SENIOR SOFTWARE ENGINEER• MINDTREE LTD BANGALORE• 2011 - 2015</h3>
+            <ul class="section-content">
+                <li>Prepared test suites for End-to-End testing of the application using SOAPUI</li>
+                <li>Raised quality bugs providing all necessary details and with suitable severity and priority</li>
+                <li>Prepared various documents which helped others in testing the various modules</li>
+                <li>Escalated requirement gaps at the right time</li>
+                <li>Worked on groovy scripting as part of E2E automation scripts using SOAPUI</li>
+                <li>Worked on VB Scripting and QTP tool to automate desktop applications</li>
+            </ul>
+        </div>
+    </div>
 
-    <h2>Skills</h2>
-    <h3>Programming Languages</h3>
-    <ul>
-        <li>C#</li>
-        <li>Java</li>
-        <li>JavaScript/TypeScript</li>
-        <li>Golang</li>
-        <li>PowerShell</li>
-        <li>PSQL</li>
-    </ul>
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <h3 class="section-content">Programming Languages</h3>
+        <ul class="section-content">
+            <li>C#</li>
+            <li>Java</li>
+            <li>JavaScript/TypeScript</li>
+            <li>Golang</li>
+            <li>PowerShell</li>
+            <li>PSQL</li>
+        </ul>
 
-    <h3>Automation Frameworks</h3>
-    <ul>
-        <li>Selenium Webdriver</li>
-        <li>Appium</li>
-        <li>Playwright</li>
-        <li>BDD SpecFlow</li>
-        <li>CodeceptJS</li>
-    </ul>
+        <h3 class="section-content">Automation Frameworks</h3>
+        <ul class="section-content">
+            <li>Selenium Webdriver</li>
+            <li>Appium</li>
+            <li>Playwright</li>
+            <li>BDD SpecFlow</li>
+            <li>CodeceptJS</li>
+        </ul>
 
-    <h3>Repositories</h3>
-    <ul>
-        <li>GitHub</li>
-        <li>Azure DevOps</li>
-    </ul>
+        <h3 class="section-content">Repositories</h3>
+        <ul class="section-content">
+            <li>GitHub</li>
+            <li>Azure DevOps</li>
+        </ul>
+    </div>
 
-    <h2>Achievements</h2>
-    <ul>
-        <li>Top performer award in the training batch 2011 at Mindtree Ltd</li>
-    </ul>
+    <div class="section">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="section-content">
+            <li class="achievement">Top performer award in the training batch 2011 at Mindtree Ltd</li>
+        </ul>
+    </div>
 
-    <h2>Certificates</h2>
-    <ul>
-        <li>Certified from ISTQB with Foundation Level Certificate in Software Testing</li>
-    </ul>
+    <div class="section">
+        <h2 class="section-title">Certificates</h2>
+        <ul class="section-content">
+            <li class="certificate">Certified from ISTQB with Foundation Level Certificate in Software Testing</li>
+        </ul>
+    </div>
 
     <footer>
-        <p>© Santosh Metri. All rights reserved</p>
+        <p class="footer-text">© Santosh Metri. All rights reserved</p>
     </footer>
 </body>
 </html>
