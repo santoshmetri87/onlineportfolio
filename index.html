@@ -9,6 +9,7 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
+
         h1 {
             font-size: 36px;
             margin-bottom: 10px;
@@ -80,23 +81,55 @@
             font-size: 14px;
             color: #777;
         }
+
+        .floating-menu {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .floating-menu a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .floating-menu a:hover {
+            color: #555;
+        }
     </style>
 </head>
 <body>
-    <div class="section">
+    <div class="floating-menu">
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#certificates">Certificates</a>
+    </div>
+
+    <div id="summary" class="section">
         <h1>Santosh Metri</h1>
         <img src="profilephoto.jpeg" alt="profile picture" class="profile-picture" />
         <p class="section-content">Knowledgeable software engineering professional with experience in building test frameworks, testing various applications, and hands-on experience in CI/CD pipelines. Organized and hardworking team player. Uses strong interpersonal skills to work well with internal and external stakeholders to meet project technical requirements. Always excited to learn and apply appropriate automation technologies to meet the short- and long-term goals of the testing organization. To further enhance technical knowledge as Senior SDET and contribute positively to Organizational development.</p>
     </div>
 
-    <div class="section">
+    <div id="education" class="section">
         <h2 class="section-title">Education</h2>
         <ul class="section-content">
             <li>Bachelor in Engineering (2011 - VTU Belgavi)</li>
         </ul>
     </div>
 
-    <div class="section">
+    <div id="work-experience" class="section">
         <h2 class="section-title">Work Experience</h2>
         <div class="work-experience">
             <h3>SENIOR SDET • DERIVCO IPSWICH LTD • 2017- CURRENT</h3>
@@ -140,7 +173,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div id="skills" class="section">
         <h2 class="section-title">Skills</h2>
         <h3 class="section-content">Programming Languages</h3>
         <ul class="section-content">
@@ -168,14 +201,14 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div id="achievements" class="section">
         <h2 class="section-title">Achievements</h2>
         <ul class="section-content">
             <li class="achievement">Top performer award in the training batch 2011 at Mindtree Ltd</li>
         </ul>
     </div>
 
-    <div class="section">
+    <div id="certificates" class="section">
         <h2 class="section-title">Certificates</h2>
         <ul class="section-content">
             <li class="certificate">Certified from ISTQB with Foundation Level Certificate in Software Testing</li>
