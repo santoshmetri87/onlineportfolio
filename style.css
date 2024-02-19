@@ -8,7 +8,6 @@ body {
 
 h1 {
   font-size: 30px;
-  margin-bottom: 10px;
   padding-top: 30px;
 }
 
@@ -138,4 +137,9 @@ a {
   padding-left: 10px;
   align-self: center;
   justify-content: center;
+}
+
+#click-next-button {
+  background-color:#444;
+  border-style: none;
 }
