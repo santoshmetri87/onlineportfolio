@@ -17,8 +17,10 @@ topBarOptions.forEach(function(option) {
 
 function toggleSection(id){
     var sections = document.querySelectorAll(".section")
+    var recommendation = document.getElementById("#recommendations")
     sections.forEach(function(sec){
-        sec.style.display="none"
+        if(sec.getAttribute("id")!=="recommendations")
+            sec.style.display="none"
     })
     document.getElementById(id).style.display="flex"
 }
@@ -29,10 +31,10 @@ var clickNextButton = document.querySelectorAll("#click-next-button")
 clickNextButton.forEach(function(button){
     button.addEventListener("click", function(){
         var topBarElements = document.querySelectorAll('.list-group-item')        
-        for (let i = 0; i <= topBarElements.length - 1; i++) {
+        for (let i = 0; i <= topBarElements.length - 2; i++) {
             if(topBarElements[i].classList.contains('active')){
                 this.classList.remove("active");
-                var elementReq = topBarElements[i+1 > (topBarElements.length - 1) ? 0 : (i+1)]
+                var elementReq = topBarElements[i+1 > (topBarElements.length - 2) ? 0 : (i+1)]
                 elementReq.classList.add("active")
                 elementReq.click()
                 return
