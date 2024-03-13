@@ -1,3 +1,44 @@
+
+function fetchRecommendations() {
+    fetch("./recommendation.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+  
+        const recommendations = data.recommendations;
+        const sectionContent = document.querySelector("[id='recommendations'] .section-content");
+  
+        let index = 0;
+  
+        function updateContent() {
+          const currentRec = recommendations[index];
+          sectionContent.querySelector("div").textContent = currentRec.content;
+          sectionContent.querySelectorAll("div")[1].textContent = currentRec.author;
+          sectionContent.querySelectorAll("div")[2].textContent = "- "+ currentRec.designation;
+  
+          index = (index + 1) % recommendations.length; // Increment index and wrap around
+  
+          setTimeout(updateContent, 15000); // Repeat after 5 seconds
+        }
+  
+        updateContent();
+      })
+      .catch((error) => console.error("Unable to fetch data:", error));
+  }
+  
+  fetchRecommendations();
+  
+
+
+
+
+
+
 // Get all top bar options
 var topBarOptions = document.querySelectorAll(".top-bar a");
 
