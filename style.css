@@ -148,13 +148,32 @@ a {
 
 #recommendations{
   overflow: hidden;
-  border: 1px;
+  border: 1px; 
+  position: flex; 
 }
 
 #recommendations .section-content{
   transform:translateX(100%) ;
   animation: scroll-left 15s linear infinite;
 }
+
+#recommendations .section-content .feedback {
+    font-size: 16px;
+    text-align: left;
+    width: 90%;
+  }
+
+#recommendations .section-content .author {
+    font-size: 14px;
+    text-align: right;
+    width: 85%;
+  }
+
+#recommendations .section-content .designation {
+    font-size: 11px;
+    text-align: right;
+    width: 85%;
+  }
 
 /* Move it (define the animation) */
 @keyframes scroll-left {
