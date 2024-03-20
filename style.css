@@ -99,13 +99,10 @@ footer {
 
 .floating-div {
   background-color: #444;
-  /* padding: 10px 50px; */
   color:#EEE;
-  /* font-size: 20px; */
-  margin-top:10px;
-
-  
+  margin-top:10px;  
 }
+
 .sidebar {
   /* width:33.33%; */
   float:left;
@@ -154,13 +151,11 @@ a {
 
 #recommendations{
   overflow: hidden;
-  border: 1px; 
-  position: flex; 
+  border: 1px;
 }
 
 #recommendations .section-content{
-  transform:translateX(100%) ;
-  animation: scroll-left 15s linear infinite;
+  animation: fade 10s ease-in-out infinite;
 }
 
 #recommendations .section-content .feedback {
@@ -182,11 +177,11 @@ a {
   }
 
 /* Move it (define the animation) */
-@keyframes scroll-left {
+@keyframes fade {
  0%   {
- transform: translateX(100%); 		
+  opacity: 0;
  }
  100% {
- transform: translateX(-100%); 
+  opacity: 1;
  }
 }
