@@ -155,7 +155,7 @@ a {
 }
 
 #recommendations .section-content{
-  animation: fade 10s ease-in-out infinite;
+  animation: fade 5s ease-in-out infinite;
 }
 
 #recommendations .section-content .feedback {
