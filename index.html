@@ -402,10 +402,10 @@
                 const remainingPlayers = combinedTeam.filter(player => !mustHavePlayers.includes(player));
         
                 // Generate all combinations of 9 players (since 2 players will always be the must-have players)
-                const teamCombinations = getCombinations(remainingPlayers, 9);
+                const teamCombinations = getCombinations(remainingPlayers, (mustHavePlayers.length-remainingPlayers.length)-1??remainingPlayers.length);
         
                 // Limit the number of combinations to display (e.g., first 5 combinations)
-                const limitedCombinations = teamCombinations.slice(0, 5);
+                const limitedCombinations = teamCombinations.slice(0, 10);
         
                 // Add captain and vice-captain choices
                 const finalTeams = limitedCombinations.map(combo => {
