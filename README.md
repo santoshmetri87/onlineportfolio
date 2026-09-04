@@ -23,18 +23,29 @@ select id from auth.users where email = 'you@example.com';
 
 5. Copy the project URL and anon key from Project Settings → API.
 
-## 2. Environment
+## 2. Secrets (do not commit values)
+
+The app reads these names at runtime. Put the **values** in GitHub Secrets, never in source.
+
+| Secret | Used by |
+| --- | --- |
+| `NEXT_PUBLIC_SUPABASE_URL` | Next.js site + admin |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Next.js site + admin |
+| `EXPO_PUBLIC_SUPABASE_URL` | Expo app |
+| `EXPO_PUBLIC_SUPABASE_ANON_KEY` | Expo app |
+
+GitHub: **Settings → Secrets and variables → Actions → New repository secret**.
+
+CI loads them as environment variables (see `.github/workflows/web.yml`). For Vercel or another host, set the same names in that host’s environment settings.
+
+Locally, copy the examples and fill in the same values (these files stay gitignored):
 
 ```bash
-cp .env.example apps/web/.env.local
-cp .env.example apps/native/.env
+cp apps/web/.env.example apps/web/.env.local
+cp apps/native/.env.example apps/native/.env
 ```
 
-Fill in the same URL and anon key for `NEXT_PUBLIC_*` and `EXPO_PUBLIC_*`.
-
 Without keys, the site still runs with sample content. Admin login needs keys.
-
-If Next.js says the parent `package.json` is outside the Git repo, remove `apps/web/.git` so this folder is the only repo root (create-next-app created a nested git directory).
 
 ## 3. Run
 
