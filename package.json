@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "web": "npm run dev -w web",
+    "native": "npm run start -w native",
+    "build:web": "npm run build -w web"
+  }
+}
